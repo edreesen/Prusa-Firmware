@@ -10,14 +10,14 @@
 ******************************************************************/
 #if MOTHERBOARD == 302
   #define MINI_RAMBO
-  
+
 #endif
 #if MOTHERBOARD == 301 || MOTHERBOARD == 302
   #define KNOWN_BOARD
   #ifndef __AVR_ATmega2560__
     #error Oops!  Make sure you have 'Arduino Mega 2560' selected from the 'Tools -> Boards' menu.
   #endif
-  
+
 
   #define FR_SENS 21
 
@@ -42,7 +42,7 @@
   #define HEATER_1_PIN 7
   #define TEMP_1_PIN 1
   #define TEMP_2_PIN -1
-  
+
 #ifndef DISABLE_MAX_ENDSTOPS
   #define X_MAX_PIN 30
   #define Z_MAX_PIN 23
@@ -64,14 +64,14 @@
 #endif
 
 
-#ifdef SNMM 
+#ifdef SNMM
 
 #define E_MUX0_PIN 17
 #define E_MUX1_PIN 16
 
 
 #endif
- 
+
 #ifdef DIS
 #define D_REQUIRE 30
 #define D_DATA 20
@@ -88,24 +88,24 @@
   #define MISO_PIN         50
   #define MOSI_PIN         51
 #endif
-  
+
     #define BEEPER 84
 
-        #define BTN_EN1 72
-        #define BTN_EN2 14
+        #define BTN_EN1 14
+        #define BTN_EN2 72
         #define BTN_ENC 9
 
         #define SDCARDDETECT 15
-        
+
         #define LCD_PINS_RS 82
         #define LCD_PINS_ENABLE 18
         #define LCD_PINS_D4 19
         #define LCD_PINS_D5 70
         #define LCD_PINS_D6 85
         #define LCD_PINS_D7 71
-  
-  
-  
+
+
+
   #define E0_STEP_PIN         34
   #define E0_DIR_PIN          43
   #define E0_ENABLE_PIN       26
@@ -132,7 +132,7 @@
     #define MOTOR_CURRENT_PWM_XY_PIN 46
     #define MOTOR_CURRENT_PWM_Z_PIN 45
     #define MOTOR_CURRENT_PWM_E_PIN 44
-    
+
   #else //RAMBo
     #define ELECTRONICS "RAMBoBig"
 
@@ -253,7 +253,7 @@
   #define HEATER_1_PIN 7
   #define TEMP_1_PIN 1
   #define TEMP_2_PIN -1
-  
+
 #ifndef DISABLE_MAX_ENDSTOPS
   #define X_MAX_PIN 30
   #define Z_MAX_PIN 23
@@ -283,7 +283,7 @@
   #define MISO_PIN         50
   #define MOSI_PIN         51
 #endif
-  
+
     #define BEEPER 78
 
         #define BTN_EN1 80
@@ -291,16 +291,16 @@
         #define BTN_ENC 21
 
         #define SDCARDDETECT 72
-        
+
         #define LCD_PINS_RS 38
         #define LCD_PINS_ENABLE 5
         #define LCD_PINS_D4 14
         #define LCD_PINS_D5 15
         #define LCD_PINS_D6 32
         #define LCD_PINS_D7 31
-  
-  
-  
+
+
+
   #define E0_STEP_PIN         34
   #define E0_DIR_PIN          43
   #define E0_ENABLE_PIN       26
@@ -324,7 +324,7 @@
     #define MOTOR_CURRENT_PWM_XY_PIN 46
     #define MOTOR_CURRENT_PWM_Z_PIN 45
     #define MOTOR_CURRENT_PWM_E_PIN 44
-    
+
 
 #endif
 
@@ -332,7 +332,7 @@
 
 
 
-#ifndef KNOWN_BOARD
+# KNOWN_BOARD
 #error Unknown MOTHERBOARD value in configuration.h
 #endif
 
